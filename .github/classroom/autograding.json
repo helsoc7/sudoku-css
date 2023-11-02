@@ -1,153 +1,149 @@
 {
-  "repo": "TechstarterGmbH/tictactoe-html-helsoc7",
-  "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens grid.html zu erstellen mit einer 3x3 HTML Tabelle für ein TicTacToe Spiel.",
-  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/640px-Tic_tac_toe.svg.png",
-  "timeframe": "30 Minuten (Viel Erfolg!)",
+  "repo": "helsoc7/sudoku-html",
+  "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens sudoku.html zu erstellen mit einer HTML Tabelle für das Spielfeld.",
+  "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sudoku_parts.svg/640px-Sudoku_parts.svg.png",
+  "timeframe": "45 Minuten (Viel Erfolg!)",
   "tests": [
     {
       "specs": {
-        "title": "HTML Datei namens grid.html mit HTML Tabelle erstellen ",
-        "list": [
-          "Erstelle eine HTML-Datei mit dem Namen 'grid.html'",
-          "In dieser Datei soll eine Tabelle erstellt werden"
-        ],
-        "code-example": "&lt;table&gt;&lt;/table&gt;"
+        "title": "Style das Sudoku Grid mit CSS.",
+        "list": ["Füge ein Stylesheet mit dem Namen 'sudoku.css' hinzu", "Verlinke das Stylesheet in der HTML-Datei"]
       },
-      "name": "HTML file must contain a table tag",
-      "feedback": "Your HTML file does not have a <table> element. Please add a table tag.",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_table.asp"
-      ],
-      "file": "grid.html",
-      "javascript": "document.querySelectorAll('table').length >= 1",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5
-    },
-    {
-      "specs": {
-        "title": "Setze den <title> Tag auf 'Welcome to TicTacToe'"
-      },
-      "name": "Set the title tag to 'Welcome to TicTacToe'",
-      "feedback": "The title of your HTML page should be 'Welcome to TicTacToe'.",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_title.asp"
-      ],
-      "file": "grid.html",
-      "javascript": "(function() { return document.title.trim() === 'Welcome to TicTacToe' ? 'true' : 'false'; })()",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5
-    },
-    {
-      "specs": {
-        "title": "Tabelle mit der Tabellenüberschrift 'TicTacToe' erstellen",
-        "code-example": "&lt;caption&gt;&lt;/caption&gt;"
-      },
-      "name": "Include a table caption titled 'TicTacToe'",
-      "feedback": "Your table should have a caption (<caption> element) with the title 'TicTacToe'.",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_caption.asp#:~:text=The%20tag%20defines%20a,align%20and%20place%20the%20caption."
-      ],
-      "file": "grid.html",
-      "javascript": "(function() { var caption = document.querySelector('table caption'); return caption && caption.textContent.trim() === 'TicTacToe'; })()",
-      "output": "true",
-      "comparison": "exact",
-      "points": 10
-    },
-    {
-      "specs": {
-        "title": "Setze die ID der Tabelle auf 'game'"
-      },
-      "name": "Set the table ID to 'game'",
-      "feedback": "The ID of your table should be set to 'game'.",
-      "urls": [
-        "https://www.w3schools.com/html/html_id.asp"
-      ],
-      "file": "grid.html",
-      "javascript": "(function() { var table = document.querySelector('table#game'); return table ? 'true' : 'false'; })()",
-      "output": "true",
-      "comparison": "exact",
-      "points": 5
-    },
-    {
-      "specs": {
-        "title": "HTML Tabelle um 9 Tabellenfelder erweitern",
-        "code-example": "&lt;td&gt;&lt;/td&gt;"
-      },
-      "name": "Create nine cells within the table",
-      "feedback": "Your table must contain exactly nine cells (<td> elements).",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_td.asp#:~:text=The%20tag%20defines%20a,with%20the%20element)"
-      ],
-      "file": "grid.html",
-      "javascript": "document.querySelectorAll('table td').length",
-      "output": "9",
-      "comparison": "exact",
-      "points": 10
-    },
-    {
-      "specs": {
-        "title": "Jeweils pro Tabellenfeld einen <button> hinzufügen",
-        "code-example": "&lt;button&gt;&lt;/button&gt;"
-      },
-      "name": "Place a button in each cell",
-      "feedback": "Each cell in your table must contain a button.",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_button.asp"
-      ],
-      "file": "grid.html",
-      "javascript": "document.querySelectorAll('table td button').length",
-      "output": "9",
-      "comparison": "exact",
-      "points": 15
-    },
-    {
-      "specs": {
-        "title": "Jeder Button sollte X anzeigen",
-        "code-example": "&lt;button type='button'&gt;Click Me!&lt;/button&gt;"
-      },
-      "name": "Place a button with 'X' in each cell",
-      "feedback": "Each cell in your table must contain a button displaying 'X'.",
-      "urls": [
-        "https://www.w3schools.com/tags/tag_button.asp"
-      ],
-      "file": "grid.html",
-      "javascript": "(function() { var buttons = document.querySelectorAll('table td button'); return buttons.length === 9 && Array.from(buttons).every(btn => btn.textContent.trim() === 'X') ? 'true' : 'false'; })()",
+      "name": "Style the Sudoku Grid with CSS",
+      "feedback": "Add CSS styles to make the Sudoku grid visually appealing. Create a stylesheet file named 'sudoku.css' and link it in your HTML file.",
+      "urls": ["https://www.w3schools.com/tags/tag_link.asp"],
+      "keywords": ["stylesheet", "css", "link", "html"],
+      "file": "sudoku.html",
+      "javascript": "(function() { /* Your CSS style check code here */ })()",
       "output": "true",
       "comparison": "exact",
       "points": 20
     },
     {
       "specs": {
-        "title": "Benennen der IDs jedes Buttons von cell1 bis cell9",
-        "code-example": "&lt;button type='button' id='cell1'&gt;X&lt;/button&gt;"
+        "title": "Verändere die Hintergrundfarbe auf ein helles rot (rgb(240, 120, 120))"
       },
-      "name": "Assign unique IDs to each button",
-      "feedback": "Each button must have a unique ID, from 'cell1' to 'cell9'.",
+      "name": "Change Background Color",
+      "feedback": "Change the background color of the cells in the Sudoku grid to a color of your choice.",
       "urls": [
-        "https://www.w3schools.com/html/html_id.asp"
+        "https://www.w3schools.com/cssref/pr_background-color.php"
       ],
-      "file": "grid.html",
-      "javascript": "(function() { return Array.from(document.querySelectorAll('table td button')).map(button => button.id).sort().join(','); })()",
-      "output": "cell1,cell2,cell3,cell4,cell5,cell6,cell7,cell8,cell9",
+      "file": "sudoku.css",
+      "javascript": "(function() { return document.querySelector('link[href=\"timetable.css\"]') !== null ? 'true' : 'false'; })()",
+      "output": "true",
       "comparison": "exact",
       "points": 20
     },
     {
       "specs": {
-        "title": "Füge außerhalb der Tabelle eine Schaltfläche 'Play' mit der ID 'play' hinzu"
+        "title": "Verändere die Schriftfarbe auf ein dunkles blau (rgb(19, 36, 77))"
       },
-      "name": "Include a 'Play' button with ID 'play' outside the table",
-      "feedback": "There should be a button outside the table with the text 'Play' and an ID of 'play'.",
+      "name": "Adjust Text Color",
+      "feedback": "Adjust the text color in the Sudoku grid to a color of your choice.",
       "urls": [
-        "https://www.w3schools.com/tags/tag_button.asp"
+        "https://www.w3schools.com/css/css_text.asp"
       ],
-      "file": "grid.html",
-      "javascript": "(function() { var playButton = document.querySelector('button#play'); return playButton && playButton.textContent.trim() === 'Play' ? 'true' : 'false'; })()",
+      "file": "sudoku.css",
+      "javascript": "(function() { var td = document.querySelector('table td'); var textColor = window.getComputedStyle(td).getPropertyValue('color'); return textColor === 'rgb(19, 36, 77)' ? 'true' : 'false'; })()",
       "output": "true",
       "comparison": "exact",
-      "points": 10
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Füge eine solid Border zu den Zellen hinzu"
+      },
+      "name": "Add a Border",
+      "feedback": "Add a border to the cells in the Sudoku grid to highlight them.",
+      "urls": [
+        "https://www.w3schools.com/cssref/pr_border.asp"
+      ],
+      "file": "sudoku.css",
+      "javascript": "(function() { var table = document.querySelector('table'); var borderStyle = window.getComputedStyle(table).getPropertyValue('border-style'); return borderStyle === 'solid' ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Zentriere die Textausrichtung"
+      },
+      "name": "Center Text Alignment",
+      "feedback": "Change the text alignment in the cells of the Sudoku grid, such as center or right alignment.",
+      "urls": [
+        "https://www.w3schools.com/css/css_align.asp#:~:text=Center%20Align%20Text,This%20text%20is%20centered."
+      ],
+      "file": "sudoku.css",
+      "javascript": "(function() { var td = document.querySelector('table td'); var textAlign = window.getComputedStyle(td).getPropertyValue('text-align'); return textAlign === 'center' ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Ändere die Font Size auf 16px"
+      },
+      "name": "Adjust Font Size",
+      "feedback": "Adjust the font size in the cells of the Sudoku grid for readability.",
+      "urls": ["https://www.w3schools.com/css/css_font_size.asp"],
+      "file": "sudoku.css",
+      "javascript": "(function() { var desiredFontSize = '16px'; var cells = document.querySelectorAll('#sudoku-grid td'); for (var i = 0; i < cells.length; i++) { var computedFontSize = window.getComputedStyle(cells[i]).getPropertyValue('font-size'); if (computedFontSize !== desiredFontSize) { return false; } } return true; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Füge Hover Effect hinzu"
+      },
+      "name": "Add Hover Effect",
+      "feedback": "Add a hover effect to the cells in the Sudoku grid for improved user experience.",
+      "urls": ["https://www.w3schools.com/cssref/sel_hover.php"],
+      "file": "sudoku.css",
+      "javascript": "(function() { var cells = document.querySelectorAll('#sudoku-grid td'); var hasHoverEffect = true; for (var i = 0; i < cells.length; i++) { cells[i].addEventListener('mouseenter', function() { if (!this.classList.contains('hovered')) { hasHoverEffect = false; } }); cells[i].addEventListener('mouseleave', function() { if (this.classList.contains('hovered')) { hasHoverEffect = false; } }); } return hasHoverEffect ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Style den 'Lösung überprüfen' Button",
+        "list": []
+      },
+      "name": "Style the 'Lösung überprüfen' Button",
+      "feedback": "Style the 'Lösung überprüfen' button below the grid with CSS. Adjust background color, text color, and font size.",
+      "urls": [],
+      "file": "sudoku.css",
+      "javascript": "(function() { var checkButton = document.querySelector('button#check-solution'); if (!checkButton) return 'false'; var computedStyles = window.getComputedStyle(checkButton); var bgColor = computedStyles.backgroundColor; var textColor = computedStyles.color; var fontSize = computedStyles.fontSize; return bgColor === '/* Your background color value */' && textColor === '/* Your text color value */' && fontSize === '/* Your font size value */' ? 'true' : 'false'; })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Add a Stylish Border to the Grid"
+      },
+      "name": "Add a Stylish Border to the Grid",
+      "feedback": "Add a stylish border to the entire Sudoku grid to visually separate it and make it more attractive.",
+      "urls": [],
+      "file": "sudoku.css",
+      "javascript": "(function() { /* Your stylish border check code here */ })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
+    },
+    {
+      "specs": {
+        "title": "Responsive Design"
+      },
+      "name": "Responsive Design",
+      "feedback": "Ensure that your Sudoku page looks good on different screen sizes. The grid cells should adapt appropriately.",
+      "urls": [],
+      "file": "sudoku.css",
+      "javascript": "(function() { /* Your responsive design check code here */ })()",
+      "output": "true",
+      "comparison": "exact",
+      "points": 20
     }
   ]
 }
